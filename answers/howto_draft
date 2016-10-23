@@ -1,0 +1,23 @@
+How to:
+
+
+1. Installer Arduino IDE fra arduino.cc
+2. Legg inn boards URL: http://arduino.esp8266.com/stable/package_esp8266com_index.json
+3. Velg WeMos D1 R2 & Mini
+4. 115200 baud
+5. Last ned og installer library for firebase: https://github.com/googlesamples/firebase-arduino/archive/master.zip
+6. Opprett Firebase-konto
+7. Gå til *Tannhjul* --> Project settings --> Database --> kopier Secret
+8. Gå til Database og legg merke til prosjekt-ID.
+9. Lim inn secret, Wifi details og firebase-details inn i .ino filen.
+10. Deploy til ESP
+
+11. Rediger web-prosjektet, scripts.js og legg inn firebase details der.
+12. Gå til Firebase --> Database --> Rules og endre "auth !- null" til true for .read
+
+
+
+
+OBS:
+
+Vi har ikke lagt vekk på sikkerhet!
