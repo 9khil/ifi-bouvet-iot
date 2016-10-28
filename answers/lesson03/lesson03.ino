@@ -12,7 +12,7 @@ void setup() {
   Serial.println(WIFI_SSID);
 
   // Start tilkobling til trådløst nettverk med ssid og password
-  WiFi.begin(WIFI_SSID, WIFI_SSID);
+  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
 
   // Skriv ut "." hvert 0.5 sekund fram til vi er tilkoblet
   while (WiFi.status() != WL_CONNECTED) {
